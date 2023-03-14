@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery-Satellite</title>
+    <script src="../JAVASCRIPT/satellite.js" defer></script>
+    <link rel="stylesheet" href="../CSS/satellite.css">
+    <link rel="stylesheet" href="../CSS/blognavbar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading" src >GALLERY OF SATELLITES</h1>
+        <input class="b" id="l" type="button" value="<" onclick="dec()">
+        <input class="b" id="r" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="../HTML/Project_Of_Space.html"><li class="mli">HOME</li></a>
+            <a href="../HTML/Info.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <a href="../HTML/planets.html"><li class="sli">Planets</li></a>
+                    <a href="../HTML/stars.html"><li class="sli">Stars</li></a>
+                    <a href="../HTML/blackhole.html"><li class="sli">Blackhole</li></a>
+                    <a href="../HTML/blackhole.html"><li class="sli">Asteroids</li></a>
+                    <li class="sli">Satellite</li>
+                </ul>
+            </li>
+            <a href="../index.html"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="galleryImages">  
+        <img class="a" onclick="openImg(0,'HEADER','A star-forming region in the Large Magellanic Cloud.It is listed as the LH 95 star forming region of the Large Magellanic Cloud. The image was taken using the Hubble Space Telescope.')">      
+        <img class="a" onclick="openImg(1,'HEADER','This dazzling infrared image from NASA`s Spitzer Space Telescope shows hundreds of thousands of stars crowded into the swirling core of our spiral Milky Way galaxy.')">
+        <img class="a" onclick="openImg(2,'HEADER','Venus is the second planet from the Sun and is earths closest planetary neighbor')">
+        <img class="a" onclick="openImg(3,'HEADER','In astrology, certain stars are considered significant. Historically, all of the various heavenly bodies considered by astrologers were considered STARS.')">
+        <img class="a" onclick="openImg(4,'HEADER','Some of the well-known stars are shown with their apparent colors and relative sizes.')">
+        <img class="a" onclick="openImg(5,'HEADER','A star-forming region in the Large Magellanic Cloud.It is listed as the LH 95 star forming region of the Large Magellanic Cloud. The image was taken using the Hubble Space Telescope.')">
+        <img class="a" onclick="openImg(6,'HEADER','Stellar evolution of low-mass (left cycle) and high-mass (right cycle) stars, with examples in italics.')">
+        <img class="a" onclick="openImg(7,'HEADER','Onion-like layers at the core of a massive, evolved star just before core collapses.')">
+    </div>
+    <div id="subWindow" style="display: none;">
+        <h1 id="close" onclick="closeImg()">X</h1>
+        <img id="subWindowImage" src="../ASSET/Images/Blackhole/0.jpg">
+        <h1 id="imageHeading">Heading</h1>
+        <p id="imgpara">Lorem ipsum dolor sit amet conseIt is the smallest Planet in the Solar System,with an equatorial radius of 2,439.7 Kilometres.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery-Planets</title>
+    <script src="../JAVASCRIPT/planets.js" defer></script>
+    <link rel="stylesheet" href="../CSS/planets.css">
+    <link rel="stylesheet" href="../CSS/blognavbar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading" src >GALLERY OF PLANETS</h1>
+        <input class="b" id="l" type="button" value="<" onclick="dec()">
+        <input class="b" id="r" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="../HTML/Project_Of_Space.html"><li class="mli">HOME</li></a>
+            <a href="../HTML/Info.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <li class="sli">Planets</li>
+                    <a href="../HTML/stars.html"><li class="sli">Stars</li></a>
+                    <a href="../HTML/blackhole.html"><li class="sli">Blackhole</li></a>
+                    <a href="../HTML/asteroids.html"><li class="sli">Asteroids</li></a>
+                    <a href="../HTML/satellite.html"><li class="sli">Satellite</li></a>
+                </ul>
+            </li>
+            <a href="../index.html"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="galleryImages">        
+        <img class="a" onclick="openImg(1,'MERCURY','MERCURY is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun`s planets.')">
+        <img class="a" onclick="openImg(2,'VENUS','Venus is the second planet from the Sun and is earths closest planetary neighbor')">
+        <img class="a" onclick="openImg(3,'EARTH','Earth is rounded into an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System.')">
+        <img class="a" onclick="openImg(4,'MARS','​Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere.')">
+        <img class="a" onclick="openImg(5,'JUPITER','Jupiter is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined')">
+        <img class="a" onclick="openImg(6,'SATURN','Saturn is the sixth planet from our Sun (a star) and orbits at a distance of about 886 million miles (1.4 billion kilometers) from the Sun.')">
+        <img class="a" onclick="openImg(7,'URANUS','Uranus is the seventh planet from the Sun, and has the third-largest diameter in our solar system.')">
+        <img class="a" onclick="openImg(8,'NEPTUNE','Neptune orbits our Sun, a star, and is the eighth planet from the Sun at a distance of about 2.8 billion miles (4.5 billion kilometers). ')">
+    </div>
+    <div id="subWindow" style="display: none;">
+        <h1 id="close" onclick="closeImg()">X</h1>
+        <img id="subWindowImage" src="../ASSET/Images/Planets/0.jpg">
+        <h1 id="imageHeading">Heading</h1>
+        <p id="imgpara">Lorem ipsum dolor sit amet conseIt is the smallest Planet in the Solar System,with an equatorial radius of 2,439.7 Kilometres.</p>
+    </div>
+</body>
+</html>
