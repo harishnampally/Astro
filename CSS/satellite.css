@@ -17,12 +17,13 @@ body{
 }
 #header{
     width: 100%;
-    position: relative;
-    top: 0px;
-    left: 0px;
     height: 520px;
-    background-image: url(../ASSET/Images/Blackhole/0.jpg);
+    background-image: url(../ASSET/Images/Satellite/6.jpg);
     background-size: 100% 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .b{
     width: 100px;
@@ -30,40 +31,40 @@ body{
     font-size: 80px;
     background-color: transparent;
     border: none;
+    display: flex;
+    justify-content: center;    
 }
-
 #l{
-    position: absolute;
-    left: 0px;
-    top: 50vh;
     color: white;
+    display: flex;
+    position: relative;
+    right: 40%;
 }
-#r{
-    position: absolute;
-    right: 0px;
-    top: 50vh;
+#r{    
     color: white;
+    display: flex;
+    position: relative;
+    left: 40%;
 }
 #galleryImages{
-    position: absolute;
-    top: 100vh;
-    left: 100px;
     display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: baseline;
+    justify-content: center;
+    margin-top: 30px;
     margin-left: 30px;
     row-gap: 30px;
     column-gap: 30px;
     z-index: -1;
 }
 #heading{
-    position: relative;
+    position: absolute;
+    left: 5%;
+    right: 5%;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 60px;
-    top: 52vh;
     text-align: center;
     letter-spacing: 15px;
     word-spacing: 10px;
@@ -85,8 +86,8 @@ body{
     align-items: center;
 }
 #subWindowImage{
-    width: 45vw;
-    height: 420px;
+     width: 40vw;
+    height: 350px;
     position: absolute;
     left: 50px;
     border: 1px groove whitesmoke;
@@ -104,7 +105,7 @@ body{
 }
 #imageHeading{
     position: absolute;
-    right: 10vw;
+    right: 5vw;
     top: 20vh;
     background-color: yellow;
     color: black;
