@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#Header{
+    background-image: url(../ASSET/Images/pngimg.com\ -\ astronaut_PNG29.png),url(../ASSET/Images/earth-1756274__340.webp);
+    background-size: 300px,150% 800px;
+    background-repeat:no-repeat;
+    background-position: right bottom,-250px 0px;
+    width: 100%;
+    height: 300px;
+    padding-top: 200px;
+    font-size: 20px;
+    letter-spacing: 20px;
+    text-align: center;
+    transition: opacity 0.5s,font-size 2s,background-size 5s,
+    background-position 10s;
+    box-shadow : 0px 10px 5px black;
+
+}
+#Header:hover{
+    font-size: 28px;
+    background-size: 220px,150% 800px;
+    background-position: 850px 120px,-250px 0px;
+}
+#blacktint{
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    opacity: 0.5;
+}
+#headingofthepage{
+    color: white;
+    opacity: 0;
+}
+#Header:hover #headingofthepage{
+    opacity: 1;
+}
+#cur{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#headingcur{
+    font-size: 40px;
+    color: white;
+}
+#paracur{
+    font: 26px;
+    padding-top: 30px;
+    color: orange;
+}
+#imgbutton{
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: white;
+    color: rgb(0,0,82);
+    box-shadow: 2px 2px 5px black;
+    border: none;
+}
+#vidcontainer{
+    margin-top: 80px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mainvid{
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+#footer{
+    width: 100%;
+    height: 80px;
+    background-color: teal;
+}
+#copy,#cpy{
+    float: left;
+    padding-top: 30px;
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+}
+#cpy{
+    padding-left: 5px;
+}
+i{
+    float: right;
+    padding-top: 30px;
+    color: white;
+    font-size: 20px;
+    padding-right: 30px;
+}
