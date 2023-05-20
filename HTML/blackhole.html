@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery-Blackhole</title>
+    <script src="../JAVASCRIPT/blackhole.js" defer></script>
+    <link rel="stylesheet" href="../CSS/blackhole.css">
+    <link rel="stylesheet" href="../CSS/blognavbar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading" src >GALLERY OF BLACKHOLES</h1>
+        <input class="b" id="l" type="button" value="<" onclick="dec()">
+        <input class="b" id="r" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="../HTML/Project_Of_Space.html"><li class="mli">HOME</li></a>
+            <a href="../HTML/Info.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <a href="../HTML/planets.html"><li class="sli">Planets</li></a>
+                    <a href="../HTML/stars.html"><li class="sli">stars</li></a>
+                    <li class="sli">Blackhole</li>
+                    <a href="../HTML/asteroids.html"><li class="sli">Asteroids</li></a>
+                    <a href="../HTML/satellite.html"><li class="sli">Satellite</li></a>
+                </ul>
+            </li>
+            <a href="../index.html"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="galleryImages">  
+        <img class="a" onclick="openImg(0,'BH with Corona','Supermassive black holes are enormously dense objects buried at the hearts of galaxies. In this illustration, the supermassive black hole at the center is surrounded by matter flowing onto the black hole in what is termed an accretion disk. This disk forms as the dust and gas in the galaxy falls onto the hole, attracted by its gravity.')">      
+        <img class="a" onclick="openImg(1,'SIMULATION','Seen nearly edgewise, the turbulent disk of gas churning around a black hole takes on a crazy double-humped appearance. The black hole’s extreme gravity alters the paths of light coming from different parts of the disk, producing the warped image.')">
+        <img class="a" onclick="openImg(2,'ASTRO POV','This picture is extracted from a science fictional pov In astrology, certain stars are considered significant. Historically, all of the various heavenly bodies considered by astrologers were considered STARS.')">
+        <img class="a" onclick="openImg(3,' ‘ SCI - FI ’ ','This picture is extracted from a science fictional pov In astrology, certain stars are considered significant. Historically, all of the various heavenly bodies considered by astrologers were considered STARS.')">
+        <img class="a" onclick="openImg(4,'PREDICTION','Predicted appearance of a non-rotating black hole with toroidal ring of ionised matter, such as has been proposed as a model for Sagittarius A*. The asymmetry is due to the Doppler effect resulting from the enormous orbital speed needed for centrifugal balance of the powerful gravitational attraction of the hole.')">
+        <img class="a" onclick="openImg(5,'Art Impression','This artist’s impression depicts the paths of photons in the vicinity of a black hole. The gravitational bending and capture of light by the event horizon is the cause of the shadow captured by the Event Horizon Telescope.')">
+        <img class="a" onclick="openImg(6,'Neighbor','Astronomers using the International Gemini Observatory have discovered the closest-known black hole to Earth.This is the 1st unambiguous detection of a dormant stellar-mass black hole in the Milky Way.Its close proximity to Earth(1600 light-years away) offers an intriguing target of study to advance our understanding of the evolution of binary systems.')">
+        <img class="a" onclick="openImg(7,'Simulation of Gas','This view shows a simulation of how a gas cloud that has been observed approaching the supermassive black hole at the centre of the galaxy may break apart over the next few years. This is the first time ever that the approach of such a doomed cloud to a supermassive black hole has been observed')">
+    </div>
+    <div id="subWindow" style="display: none;">
+        <h1 id="close" onclick="closeImg()">X</h1>
+        <img id="subWindowImage" src="../ASSET/Images/Blackhole/0.jpg">
+        <h1 id="imageHeading">Heading</h1>
+        <p id="imgpara">Lorem ipsum dolor sit amet conseIt is the smallest Planet in the Solar System,with an equatorial radius of 2,439.7 Kilometres.</p>
+    </div>
+</body>
+</html>
